@@ -14,4 +14,13 @@ public class AssertionTopics {
 		//Hard assert
 		Assert.assertEquals(actual, expected);
 	}
+	
+	@Test(retryAnalyzer = RetryAnalyzerClass.class)
+	private void data1() {
+		String expected = "Garuda";
+		String actual = "garuda";
+		
+		//Hard assert
+		Assert.assertEquals(actual, expected);
+	}
 }
